@@ -3,7 +3,7 @@ mersennejs
 ==========
 
 Mersennejs.js is an abbreviated javascript port of the mersenne twister 
-PRNG at:
+PRNG at
 http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/mt19937ar.c
 
 Only three of its C functions were translated into javascript: 
@@ -17,12 +17,12 @@ These functions are exported respectively as seed, rand, and random.
 rand is only exported for unit testing purposes.
 
 The library also exports a function named randint(N).  This function
-is provided as a convience and is not in the C code.  It generates a 
+is provided as a convience and is not in the C code.  It generates an
 unsigned number from 0 to N-1 inclusive, with N passed as the first argument.
 
 Compared to most mersenne ports, this library has no constructor and no
 methods.  All its PRNG functions are provided as named exports.
-So no need to worry about the instance object since there is none.
+So there is no need to worry about the instance object, since there is none.
 
 For example:
 
