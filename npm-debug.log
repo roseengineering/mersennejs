@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish', '.' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.4
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/george/mersennejs',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/george/.npm/mersennejs/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/george/.npm correctMkdir not in flight; initializing
+10 info lifecycle mersennejs@1.0.0~prepublish: mersennejs@1.0.0
+11 silly lifecycle mersennejs@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/george/.npm/mersennejs/1.0.0/package.tgz',
+12 verbose tar pack   '/home/george/mersennejs' ]
+13 verbose tarball /home/george/.npm/mersennejs/1.0.0/package.tgz
+14 verbose folder /home/george/mersennejs
+15 verbose addLocalTarball adding from inside cache /home/george/.npm/mersennejs/1.0.0/package.tgz
+16 verbose correctMkdir /home/george/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd mersennejs@1.0.0
+18 verbose afterAdd /home/george/.npm/mersennejs/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/george/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/george/.npm/mersennejs/1.0.0/package/package.json written
+21 silly publish { name: 'mersennejs',
+21 silly publish   author: { name: 'roseengineering', url: 'github.com/roseengineering' },
+21 silly publish   contributors: [ { name: 'roseengineering', url: 'github.com/roseengineering' } ],
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'An abbreviated javascript translation of the mt19933ar.c Mersenne Twister random number generator.',
+21 silly publish   keywords: [ 'random', 'mersenne', 'twister', 'number', 'generator' ],
+21 silly publish   homepage: 'https://github.com/roseengineering/mersennejs',
+21 silly publish   license: 'BSD-3-Clause',
+21 silly publish   directories: { test: 'test' },
+21 silly publish   main: 'mersennejs',
+21 silly publish   readme: '\nmersennejs (https://github.com/roseengineering/mersennejs)\n==========\n\nMersennejs.js is an abbreviated javascript port of the mersenne twister \nPRNG at\nhttp://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/mt19937ar.c\n\nOnly three of its C functions were translated into javascript: \n\n1. init\\_genrand(seed) which seeds the mersenne twister with a signed\n   or unsigned 32-bit number.\n2. genrand\\_int32() which generates an unsigned 32-bit random number.\n3. genrand\\_real2() which generates a floating point random number on [0,1).\n\nThese functions are exported respectively as seed, rand, and random.\nrand is only exported for unit testing purposes.\n\nThe library also exports a function named randint(N).  This function\nis provided as a convenience and is not in the C code.  It generates an\nunsigned number from 0 to N-1 inclusive, with N passed as the first argument.\n\nCompared to most mersenne ports, this library has no constructor and no\nmethods.  All its PRNG functions are provided as named exports.\nThe library maintains only one source of state.\nSo there is no need to worry about the instance object, since there is none.\n\nFor example:\n\n    import { random, randint, seed } from \'mersennejs\';\n    seed(0)  // seed state vector with a 32-bit integer, can be zero\n    console.log(random())    // returns floating PRN on [0,1)\n    console.log(randint(10)) // return integer PRN on [0,10)\n\nAfter minimization, the uncompressed size of the library is just 639 bytes.\n\nTo test the port, run "make test".  Gcc, node and js24 must all be\ninstalled.\n\n\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'dacc230cf5b05c5f74c4717c00a8ffddeed38963',
+21 silly publish   _id: 'mersennejs@1.0.0',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '22433efc413a1ea1d56ba604c807a5d3f5c47e5b',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name mersennejs
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'mersennejs',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'mersennejs',
+26 silly mapToRegistry   name: 'mersennejs',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/mersennejs
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/george/.npm/mersennejs/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/mersennejs
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 12:22:42 PM
+33 verbose request using bearer token for auth
+34 verbose request id 85cb1c445def4f48
+35 http request PUT https://registry.npmjs.org/mersennejs
+36 http 403 https://registry.npmjs.org/mersennejs
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '91',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sat, 25 Nov 2017 17:22:44 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-jfk8130-JFK',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1511630563.111945,VS0,VE1077',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating /home/george/.npm/registry.npmjs.org/mersennejs on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You cannot publish over the previously published version 1.0.0. : mersennejs
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid mersennejs
+43 verbose cwd /home/george/mersennejs
+44 error Linux 4.14.0-rc5-amd64
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "."
+46 error node v6.9.4
+47 error npm  v3.10.10
+48 error code E403
+49 error You cannot publish over the previously published version 1.0.0. : mersennejs
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
