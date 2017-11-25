@@ -5,7 +5,7 @@
   "version":"1.0.0",
   "description":"An abbreviated javascript translation of the mt19933ar.c Mersenne Twister random number generator.",
   "keywords": ["random", "mersenne", "twister", "number", "generator"],
-  "homepage": "http://github.com/roseengineering/mersennejs",
+  "homepage": "https://github.com/roseengineering/mersennejs",
   "license": "BSD-3-Clause",
   "directories": {
     "test": "test"

@@ -1,5 +1,5 @@
 
-mersennejs
+mersennejs (https://github.com/roseengineering/mersennejs)
 ==========
 
 Mersennejs.js is an abbreviated javascript port of the mersenne twister 
@@ -22,7 +22,7 @@ unsigned number from 0 to N-1 inclusive, with N passed as the first argument.
 
 Compared to most mersenne ports, this library has no constructor and no
 methods.  All its PRNG functions are provided as named exports.
-The module maintains only one source of state.
+The library maintains only one source of state.
 So there is no need to worry about the instance object, since there is none.
 
 For example:
