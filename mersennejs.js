@@ -7,6 +7,7 @@
      random()   // returns floating PRN on [0,1)    (32-bit resolution)
      randint(N) // returns integer PRN on [0,N)     (32-bit resolution)
      rand()     // returns integer PRN on [0,2**32) (32-bit resolution)
+   Copyright (c) 2017 roseengineering
 */
 /* 
    A C-program for MT19937, with initialization improved 2002/1/26.
