@@ -1,7 +1,7 @@
 /* 
-   A modified javascript port of
+   An abbreviated javascript port of
    http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/mt19937ar.c
-   Supports explicit imports.  For example:
+   Supports named exports.  No instances, only one state.  For example:
      import { random, rand, randint, seed } from 'mersennejs';
      seed(s)    // seeds state vector with 32-bit integer, can be zero
      random()   // returns floating PRN on [0,1)    (32-bit resolution)
