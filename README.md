@@ -1,5 +1,5 @@
 
-mersennejs (https://github.com/roseengineering/mersennejs)
+mersennejs
 ==========
 
 Mersennejs.js is an abbreviated javascript port of the mersenne twister 
@@ -37,4 +37,5 @@ After minimization, the uncompressed size of the library is just 639 bytes.
 To test the port, run "make test".  Gcc, node and js24 must all be
 installed.
 
+- https://github.com/roseengineering/mersennejs
 

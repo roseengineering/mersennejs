@@ -1,8 +1,8 @@
 {
   "name":"mersennejs",
-  "author":"roseengineering (github.com/roseengineering)",
-  "contributors":["roseengineering (github.com/roseengineering)"],
-  "version":"1.0.1",
+  "author":"roseengineering (https://github.com/roseengineering)",
+  "contributors":["roseengineering"],
+  "version":"1.0.2",
   "description":"An abbreviated javascript translation of the mt19933ar.c Mersenne Twister random number generator.",
   "keywords": ["random", "mersenne", "twister", "number", "generator"],
   "homepage": "https://github.com/roseengineering/mersennejs",
