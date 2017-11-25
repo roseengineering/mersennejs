@@ -12,7 +12,7 @@ while True:
         f.write("console = this.console || {};\n")
         f.write("console.log = console.log || print;\n")
     os.system(
-        "python3 test/bundle.py test/index.js mersennejs.js >> /tmp/index.js")
+        "python3 test/bundle.py test/index.js mersennejs.min.js >> /tmp/index.js")
     os.system(
         "test/mt19937ar_test %d > /tmp/out" % seed)
     res = os.system(

@@ -1,5 +1,5 @@
 
-var mersenne = require('mersennejs');
+var mersenne = require('mersennejs.min');
 var seed = mersenne.seed;
 var rand = mersenne.rand;
 var random = mersenne.random;
